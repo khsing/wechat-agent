@@ -27,6 +27,8 @@ class WechatAgent extends Agent
             static::$wechatBrowsers,
             parent::$additionalBrowsers
         );
+
+        parent::__construct();
     }
 
     /**
