@@ -47,6 +47,7 @@ class WechatAgentTest extends TestCase
             $this->assertEquals(-1, $agent->version_compare("Wechat", "8.6.0"), $ua);
             $this->assertEquals(0, $agent->version_compare("Wechat", $result["version"]), $ua);
             $this->assertTrue($agent->version_compare("Wechat", $result["version"], "="), $ua);
+            $this->assertTrue($agent->version_compare("Wechat", "6.6.1", ">="), $ua);
         }
     }
 
